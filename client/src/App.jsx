@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
@@ -7,7 +7,6 @@ import Motivation from './pages/Motivation';
 
 function App() {
   return (
-    <Router>
       <div className="min-h-screen bg-gray-950 text-white">
         <Navbar />
         <Routes>
@@ -17,7 +16,6 @@ function App() {
           <Route path="/motivation" element={<Motivation />} />
         </Routes>
       </div>
-    </Router>
   );
 }
 
