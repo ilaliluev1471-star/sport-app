@@ -1,119 +1,158 @@
- export default function Training() {
+export default function Training() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
       <h1 className="text-5xl font-bold mb-10 text-center text-sport-green">
         Эффективные тренировки для любого уровня
       </h1>
 
-      <div className="prose prose-invert prose-lg leading-relaxed text-gray-300 max-w-none">
+      <div className="prose prose-invert prose-lg leading-relaxed text-gray-300 max-w-none mb-16">
         <p>
-          Регулярные тренировки — это ключ к сильному телу, хорошему самочувствию и уверенности.
-          Главное правило для начала: <span className="text-sport-green font-semibold">3–4 раза в неделю по 45–60 минут</span> вполне достаточно,
-          чтобы увидеть первые заметные изменения уже через 4–8 недель.
-        </p>
-
-        <h2 className="text-4xl font-bold mt-12 mb-6 text-white">
-          Базовые упражнения — основа любой программы
-        </h2>
-        <p className="text-lg">
-          Эти упражнения задействуют сразу несколько крупных мышечных групп. Освой технику — и прогресс пойдёт очень быстро.
+          Рекомендуемый график: <span className="text-sport-green font-semibold">Понедельник — Среда — Пятница</span>. 
+          3 тренировки в неделю — оптимально для новичков и среднего уровня.
         </p>
       </div>
 
-      {/* Сетка с упражнениями */}
-      <div className="grid md:grid-cols-2 gap-8 mt-12">
+      {/* ==================== ПОНЕДЕЛЬНИК - PUSH ==================== */}
+      <div className="mb-20">
+        <h2 className="text-4xl font-bold text-sport-green mb-8">Понедельник — Push (Грудь • Плечи • Трицепс)</h2>
         
-        {/* 1. Приседания */}
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-          <h3 className="text-2xl font-bold mb-4 text-sport-green">Приседания (Squats)</h3>
-          
-          <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/6uX4Yx8zLqE" 
-              title="Приседания"
-              allowFullScreen
-            ></iframe>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">1. Отжимания / Жим лёжа</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/2fKzL9m.gif" alt="Отжимания" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">4 подхода × 8–12 повторений</p>
           </div>
 
-          <p className="text-gray-300">
-            Ноги на ширине плеч, спина прямая. Опускайся, пока бёдра не будут параллельны полу.
-          </p>
-          <p className="mt-3 text-gray-400 text-sm">
-            Новичкам: 3 подхода × 10–15 повторений
-          </p>
-        </div>
-
-        {/* 2. Жим лёжа / Отжимания */}
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-          <h3 className="text-2xl font-bold mb-4 text-sport-green">Жим лёжа / Отжимания (Bench Press / Push-ups)</h3>
-          
-          <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/4Y2ZdH5P8vU" 
-              title="Жим лёжа"
-              allowFullScreen
-            ></iframe>
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">2. Жим гантелей вверх (сидя)</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/X7vL9Kp.gif" alt="Жим вверх" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 10–12 повторений</p>
           </div>
 
-          <p className="text-gray-300">
-            Развивает грудь, плечи, трицепсы. Если штанга тяжёлая — начинай с отжиманий от пола или от колен.
-          </p>
-          <p className="mt-3 text-gray-400 text-sm">
-            3 подхода × 8–12 повторений
-          </p>
-        </div>
-
-        {/* 3. Тяга в наклоне */}
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-          <h3 className="text-2xl font-bold mb-4 text-sport-green">Тяга в наклоне / Подтягивания</h3>
-          
-          <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/6TZvK-0y7kM" 
-              title="Тяга в наклоне"
-              allowFullScreen
-            ></iframe>
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">3. Разведения гантелей в стороны</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/8QmP2vL.gif" alt="Разведения" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 12–15 повторений</p>
           </div>
 
-          <p className="text-gray-300">
-            Прорабатывает спину и бицепсы. Нет перекладины? Делай тягу гантели одной рукой или австралийские подтягивания.
-          </p>
-          <p className="mt-3 text-gray-400 text-sm">
-            3 подхода × 10–12 повторений
-          </p>
-        </div>
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">4. Отжимания узким хватом (трицепс)</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/5vN9pLm.gif" alt="Трицепс" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 10–12 повторений</p>
+          </div>
 
-        {/* 4. Мёртвая тяга */}
-        <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-          <h3 className="text-2xl font-bold mb-4 text-sport-green">Мёртвая тяга (Deadlift)</h3>
-          
-          <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/ytGaGIn3SjE" 
-              title="Мёртвая тяга"
-              allowFullScreen
-            ></iframe></div>
-
-          <p className="text-gray-300">
-            Король упражнений: спина, ноги, ягодицы, хват. Для новичков — румынская тяга с лёгким весом.
-          </p>
-          <p className="mt-3 text-gray-400 text-sm">
-            3 подхода × 8–10 повторений
-          </p>
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">5. Французский жим</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/Plank.gif" alt="Французский жим" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 12 повторений</p>
+          </div>
         </div>
       </div>
 
-      <div className="mt-20 text-center">
-        <h2 className="text-4xl font-bold mb-6 text-white">
-          Простая программа для новичка (Full Body, 3 раза в неделю)
-        </h2>
-        <p className="text-gray-400">
-          Тренируйся через день: понедельник — среда — пятница
-        </p>
+      {/* ==================== СРЕДА - PULL ==================== */}
+      <div className="mb-20">
+        <h2 className="text-4xl font-bold text-sport-green mb-8">Среда — Pull (Спина • Бицепс • Задние дельты)</h2>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">1. Тяга в наклоне</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/JqK8vLm.gif" alt="Тяга" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">4 подхода × 10–12 повторений</p>
+          </div><div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">2. Подтягивания / Австралийские</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/7vK9pL2.gif" alt="Подтягивания" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3–4 подхода × максимум повторений</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">3. Тяга верхнего блока</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/9LmX7vK.gif" alt="Тяга блока" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 12 повторений</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">4. Подъём гантелей на бицепс</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/BvK9pL2.gif" alt="Бицепс" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 12–15 повторений</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">5. Разведения в наклоне (задние дельты)</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/8QmP2vL.gif" alt="Задние дельты" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 12–15 повторений</p>
+          </div>
+        </div>
+      </div>
+
+      {/* ==================== ПЯТНИЦА - LEGS ==================== */}
+      <div>
+        <h2 className="text-4xl font-bold text-sport-green mb-8">Пятница — Legs (Ноги + Ягодицы + Пресс)</h2>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">1. Приседания</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/8vKzq2G.gif" alt="Приседания" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">4 подхода × 10–15 повторений</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">2. Румынская тяга</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/5vN9pLm.gif" alt="Румынская тяга" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">4 подхода × 10–12 повторений</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">3. Выпады ходьбой</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/L9vK2pQ.gif" alt="Выпады" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 10–12 на каждую ногу</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">4. Подъём на носки (икры)</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/Plank.gif" alt="Икры" className="w-full h-full object-cover" />
+            </div><p className="text-gray-400 text-sm">4 подхода × 15–20 повторений</p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
+            <h3 className="text-xl font-semibold mb-3">5. Планка + Скручивания</h3>
+            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
+              <img src="https://i.imgur.com/Plank.gif" alt="Пресс" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-gray-400 text-sm">3 подхода × 45–90 секунд + 3×15 скручиваний</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center mt-16 text-gray-400 text-lg">
+        Отдых между подходами: 60–120 секунд<br />
+        Каждую неделю старайся увеличивать вес или количество повторений.
       </div>
     </div>
   );
