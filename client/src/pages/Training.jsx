@@ -28,17 +28,12 @@
           <h3 className="text-2xl font-bold mb-4 text-sport-green">Приседания (Squats)</h3>
           
           <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <video 
-              className="w-full h-full object-cover"
-              controls 
-              loop 
-              muted 
-              playsInline
-              poster="https://via.placeholder.com/600x340/111827/22c55e?text=Приседания"
-            >
-              <source src="/videos/squats.mp4" type="video/mp4" />
-              Ваш браузер не поддерживает видео.
-            </video>
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/6uX4Yx8zLqE" 
+              title="Приседания"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <p className="text-gray-300">
@@ -54,15 +49,12 @@
           <h3 className="text-2xl font-bold mb-4 text-sport-green">Жим лёжа / Отжимания (Bench Press / Push-ups)</h3>
           
           <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <video 
-              className="w-full h-full object-cover"
-              controls 
-              loop 
-              muted 
-              playsInline
-            >
-              <source src="/videos/bench-press.mp4" type="video/mp4" />
-            </video>
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/4Y2ZdH5P8vU" 
+              title="Жим лёжа"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <p className="text-gray-300">
@@ -73,20 +65,17 @@
           </p>
         </div>
 
-        {/* 3. Тяга в наклоне / Подтягивания */}
+        {/* 3. Тяга в наклоне */}
         <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
           <h3 className="text-2xl font-bold mb-4 text-sport-green">Тяга в наклоне / Подтягивания</h3>
           
           <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <video 
-              className="w-full h-full object-cover"
-              controls 
-              loop 
-              muted 
-              playsInline
-            >
-              <source src="/videos/bent-over-row.mp4" type="video/mp4" />
-            </video>
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/6TZvK-0y7kM" 
+              title="Тяга в наклоне"
+              allowFullScreen
+            ></iframe>
           </div>
 
           <p className="text-gray-300">
@@ -99,19 +88,15 @@
 
         {/* 4. Мёртвая тяга */}
         <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-[11.05.2026 16:29] илья: <h3 className="text-2xl font-bold mb-4 text-sport-green">Мёртвая тяга (Deadlift)</h3>
+          <h3 className="text-2xl font-bold mb-4 text-sport-green">Мёртвая тяга (Deadlift)</h3>
           
           <div className="aspect-video bg-black rounded-xl overflow-hidden mb-5">
-            <video 
-              className="w-full h-full object-cover"
-              controls 
-              loop 
-              muted 
-              playsInline
-            >
-              <source src="/videos/deadlift.mp4" type="video/mp4" />
-            </video>
-          </div>
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/ytGaGIn3SjE" 
+              title="Мёртвая тяга"
+              allowFullScreen
+            ></iframe></div>
 
           <p className="text-gray-300">
             Король упражнений: спина, ноги, ягодицы, хват. Для новичков — румынская тяга с лёгким весом.
@@ -122,16 +107,13 @@
         </div>
       </div>
 
-      {/* Программа для новичка */}
-      <div className="mt-20">
-        <h2 className="text-4xl font-bold mb-6 text-white text-center">
+      <div className="mt-20 text-center">
+        <h2 className="text-4xl font-bold mb-6 text-white">
           Простая программа для новичка (Full Body, 3 раза в неделю)
         </h2>
-        <p className="text-center text-gray-400 mb-10">
+        <p className="text-gray-400">
           Тренируйся через день: понедельник — среда — пятница
         </p>
-
-        {/* Здесь можно оставить твой текущий список упражнений */}
       </div>
     </div>
   );
