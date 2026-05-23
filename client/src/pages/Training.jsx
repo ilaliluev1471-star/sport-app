@@ -1,159 +1,224 @@
-export default function Training() {
-  return (
-    <div className="max-w-5xl mx-auto px-6 py-16">
-      <h1 className="text-5xl font-bold mb-10 text-center text-sport-green">
-        Эффективные тренировки для любого уровня
-      </h1>
+import pushupGif from "../assets/gifs/pushup.gif"
+import shoulderpressGif from "../assets/gifs/shoulderpress.gif"
+import lateralraiseGif from "../assets/gifs/lateralraise.gif"
+import closepushupGif from "../assets/gifs/closepushup.gif"
 
-      <div className="prose prose-invert prose-lg leading-relaxed text-gray-300 max-w-none mb-16">
-        <p>
-          Рекомендуемый график: <span className="text-sport-green font-semibold">Понедельник — Среда — Пятница</span>. 
-          3 тренировки в неделю — оптимально для новичков и среднего уровня.
-        </p>
-      </div>
+import pullupGif from "../assets/gifs/pullup.gif"
+import barbellrowGif from "../assets/gifs/barbellrow.gif"
+import bicepcurlGif from "../assets/gifs/bicepcurl.gif"
+import hammercurlGif from "../assets/gifs/hammercurl.gif"
+import facepullGif from "../assets/gifs/facepull.gif"
 
-      {/* ==================== ПОНЕДЕЛЬНИК - PUSH ==================== */}
-      <div className="mb-20">
-        <h2 className="text-4xl font-bold text-sport-green mb-8">Понедельник — Push (Грудь • Плечи • Трицепс)</h2>
-        
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">1. Отжимания / Жим лёжа</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/2fKzL9m.gif" alt="Отжимания" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">4 подхода × 8–12 повторений</p>
-          </div>
+import squatGif from "../assets/gifs/squat.gif"
+import lungesGif from "../assets/gifs/lunges.gif"
+import calfraiseGif from "../assets/gifs/calfraise.gif"
+import plankGif from "../assets/gifs/plank.gif"
+import crunchGif from "../assets/gifs/crunch.gif"
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">2. Жим гантелей вверх (сидя)</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/X7vL9Kp.gif" alt="Жим вверх" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 10–12 повторений</p>
-          </div>
+const exercises = {
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">3. Разведения гантелей в стороны</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/8QmP2vL.gif" alt="Разведения" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 12–15 повторений</p>
-          </div>
+push:[
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">4. Отжимания узким хватом (трицепс)</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/5vN9pLm.gif" alt="Трицепс" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 10–12 повторений</p>
-          </div>
+{
+name:"1. Отжимания / Жим лёжа",
+gif:pushupGif,
+reps:"4 подхода × 8–12 повторений"
+},
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">5. Французский жим</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/Plank.gif" alt="Французский жим" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 12 повторений</p>
-          </div>
-        </div>
-      </div>
+{
+name:"2. Жим гантелей вверх",
+gif:shoulderpressGif,
+reps:"3 подхода × 10–12 повторений"
+},
 
-      {/* ==================== СРЕДА - PULL ==================== */}
-      <div className="mb-20">
-        <h2 className="text-4xl font-bold text-sport-green mb-8">Среда — Pull (Спина • Бицепс • Задние дельты)</h2>
-        
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">1. Тяга в наклоне</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/JqK8vLm.gif" alt="Тяга" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">4 подхода × 10–12 повторений</p>
-          </div><div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">2. Подтягивания / Австралийские</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/7vK9pL2.gif" alt="Подтягивания" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3–4 подхода × максимум повторений</p>
-          </div>
+{
+name:"3. Разведения гантелей в стороны",
+gif:lateralraiseGif,
+reps:"3 подхода × 12–15 повторений"
+},
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">3. Тяга верхнего блока</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/9LmX7vK.gif" alt="Тяга блока" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 12 повторений</p>
-          </div>
+{
+name:"4. Узкие отжимания",
+gif:closepushupGif,
+reps:"3 подхода × 10–12 повторений"
+}
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">4. Подъём гантелей на бицепс</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/BvK9pL2.gif" alt="Бицепс" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 12–15 повторений</p>
-          </div>
+],
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">5. Разведения в наклоне (задние дельты)</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/8QmP2vL.gif" alt="Задние дельты" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 12–15 повторений</p>
-          </div>
-        </div>
-      </div>
+pull:[
 
-      {/* ==================== ПЯТНИЦА - LEGS ==================== */}
-      <div>
-        <h2 className="text-4xl font-bold text-sport-green mb-8">Пятница — Legs (Ноги + Ягодицы + Пресс)</h2>
-        
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">1. Приседания</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/8vKzq2G.gif" alt="Приседания" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">4 подхода × 10–15 повторений</p>
-          </div>
+{
+name:"1. Тяга штанги в наклоне",
+gif:barbellrowGif,
+reps:"4 подхода × 10–12 повторений"
+},
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">2. Румынская тяга</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/5vN9pLm.gif" alt="Румынская тяга" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">4 подхода × 10–12 повторений</p>
-          </div>
+{
+name:"2. Подтягивания",
+gif:pullupGif,
+reps:"3–4 подхода максимум"
+},
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">3. Выпады ходьбой</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/L9vK2pQ.gif" alt="Выпады" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 10–12 на каждую ногу</p>
-          </div>
+{
+name:"3. Сгибание рук на бицепс",
+gif:bicepcurlGif,
+reps:"3 подхода × 12 повторений"
+},
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">4. Подъём на носки (икры)</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/Plank.gif" alt="Икры" className="w-full h-full object-cover" />
-            </div><p className="text-gray-400 text-sm">4 подхода × 15–20 повторений</p>
-          </div>
+{
+name:"4. Молотки",
+gif:hammercurlGif,
+reps:"3 подхода × 12 повторений"
+},
 
-          <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700">
-            <h3 className="text-xl font-semibold mb-3">5. Планка + Скручивания</h3>
-            <div className="aspect-video bg-black rounded-xl overflow-hidden mb-4">
-              <img src="https://i.imgur.com/Plank.gif" alt="Пресс" className="w-full h-full object-cover" />
-            </div>
-            <p className="text-gray-400 text-sm">3 подхода × 45–90 секунд + 3×15 скручиваний</p>
-          </div>
-        </div>
-      </div>
+{
+name:"5. Задние дельты",
+gif:facepullGif,
+reps:"3 подхода × 12–15 повторений"
+}
 
-      <div className="text-center mt-16 text-gray-400 text-lg">
-        Отдых между подходами: 60–120 секунд<br />
-        Каждую неделю старайся увеличивать вес или количество повторений.
-      </div>
-    </div>
-  );
+],
+
+legs:[
+
+{
+name:"1. Приседания",
+gif:squatGif,
+reps:"4 подхода × 10–15 повторений"
+},
+
+{
+name:"2. Выпады",
+gif:lungesGif,
+reps:"3 подхода × 10–12 повторений"
+},
+
+{
+name:"3. Подъём на носки",
+gif:calfraiseGif,
+reps:"4 подхода × 15–20 повторений"
+},
+
+{
+name:"4. Планка",
+gif:plankGif,
+reps:"3 подхода × 45–90 секунд"
+},
+
+{
+name:"5. Скручивания",
+gif:crunchGif,
+reps:"3 подхода × 15 повторений"
+}
+
+]
+
+}
+
+function Section({title,data}){
+
+return(
+
+<div className="mb-20">
+
+<h2 className="text-4xl font-bold text-sport-green mb-8">
+{title}
+</h2>
+
+<div className="grid md:grid-cols-2 gap-8">
+
+{data.map((item,index)=>(
+
+<div
+key={index}
+className="bg-zinc-900 p-6 rounded-2xl border border-zinc-700"
+>
+
+<h3 className="text-xl font-semibold mb-3">
+{item.name}
+</h3>
+
+<div className="aspect-video rounded-xl overflow-hidden mb-4">
+
+<img
+src={item.gif}
+alt={item.name}
+className="w-full h-full object-cover"
+/>
+
+</div>
+
+<p className="text-gray-400">
+{item.reps}
+</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+)
+
+}
+
+export default function Training(){
+
+return(
+
+<div className="max-w-5xl mx-auto px-6 py-16">
+
+<h1 className="text-5xl font-bold mb-10 text-center text-sport-green">
+
+Эффективные тренировки для любого уровня
+
+</h1>
+<div className="mb-10 text-gray-300">
+  <h1 className="text-4xl font-bold text-green-400 mb-4">
+    Тренировки
+  </h1>
+
+  <p className="text-lg mb-3">
+    Ниже представлены примеры тренировок для начинающего и среднего уровня подготовки.
+    Программа разделена по принципу Push / Pull / Legs — это один из самых
+    популярных подходов для развития силы, мышечной массы и общего прогресса.
+  </p>
+
+  <p className="mb-3">
+    Выбирай комфортный вес, соблюдай технику выполнения упражнений
+    и не забывай про отдых между подходами.
+  </p>
+
+  <p className="text-gray-400">
+    Важно: прогресс строится не только на тренировках, но и на
+    восстановлении, сне и правильном питании.
+  </p>
+</div>
+<div className="text-gray-300 mb-16">
+
+Понедельник — Среда — Пятница
+
+</div>
+
+<Section
+title="Понедельник — Push"
+data={exercises.push}
+/>
+
+<Section
+title="Среда — Pull"
+data={exercises.pull}
+/>
+
+<Section
+title="Пятница — Legs"
+data={exercises.legs}
+/>
+
+</div>
+
+)
+
 }
