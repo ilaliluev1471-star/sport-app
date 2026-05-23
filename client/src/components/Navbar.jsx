@@ -9,7 +9,7 @@ export default function Navbar() {
           <span className="text-4xl">🏋️</span>
           <span className="text-2xl font-bold tracking-widest">SPORTLIFE</span>
         </Link>
-        <div className="flex gap-8 text-lg">
+        <div className="flex gap-4 text-lg overflow-x-auto whitespace-nowrap">
           <Link to="/" className="hover:text-sport-green transition">Главная</Link>
           <Link to="/nutrition" className="hover:text-sport-green transition">Питание</Link>
           <Link to="/training" className="hover:text-sport-green transition">Тренировки</Link>
